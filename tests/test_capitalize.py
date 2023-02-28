@@ -1,9 +1,7 @@
 from capitalize import capitalize
 
-if capitalize('text') != 'Text':
-    raise Exception('Функция работает неверно!')
+assert capitalize('text') == 'Text'
 
-if capitalize('') != '':
-    raise Exception('Функция работает неверно! Нельзя изменить пустую строку.')
+assert capitalize('') == ''
 
 print('Все тесты пройдены')
